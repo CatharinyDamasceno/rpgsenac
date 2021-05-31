@@ -367,7 +367,7 @@ public class ProjetosemiFinal {
                         System.out.println("Fechando o jogo... \n");
                         break;
                 }
-                if (hpComputador > 0 && hpComputador > 0 && escolhaAtaque != 9 && controlQuest < 20) {
+                if (hpUsuario > 0 && hpComputador > 0 && escolhaAtaque != 9 && controlQuest < 20) {
                     escolhaAtaque = ComputerAttack();
 
                     switch (escolhaAtaque) { // Ataque do computador vem de um random de 1 a 4

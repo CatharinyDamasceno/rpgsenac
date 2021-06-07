@@ -405,7 +405,7 @@ static Random rd=new Random();
                             System.out.println("Caiu na minha armadilha Morcego tolo hahahahaha \nTenta sair dessa agora \nAHAHAHAH (Risada maligna)");
                             resposta = Riddles(vet,controlQuest); // Chamando a função das Riddles com os acertos
                             controlQuest++; // controlador de posição para a matriz de charadas 
-                            if (resposta == 1) { // se o retorno da matrix for 1 A pessoa acertou a charada
+                            switch (resposta) { // se o retorno da matrix for 1 A pessoa acertou a charada
                                 hpComputador -= 1000; // O adversario perde de imediato
                                 ac += resposta; // E é acrescentado 1 para a variavel que ira mostrar os acertos 
                                 hpUsuario += 8; // e recupera um pouco de Vida pelo acerto
